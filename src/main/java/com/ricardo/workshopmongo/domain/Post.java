@@ -8,7 +8,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.ricardo.workshopmongo.dto.AuthorDTO;
-import com.ricardo.workshopmongo.dto.UserDTO;
+
 
 @Document
 public class Post implements Serializable {
