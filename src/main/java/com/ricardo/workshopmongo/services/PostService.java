@@ -1,5 +1,7 @@
 package com.ricardo.workshopmongo.services;
 
+import java.time.LocalDate;
+
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +27,11 @@ public class PostService {
 
     public List<Post> findByTitle(String text){
         return repository.searchTitle(text);
+    }
+
+    public List<Post> fullSearch(String text, LocalDate minDate, LocalDate maxDate){        
+        
+        return repository.fullSeach(text, minDate, maxDate);
     }
 
 
